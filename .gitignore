@@ -1,4 +1,3 @@
 .DS_Store
-lua/.DS_Store
-lua/.luarc.json
-plugin/
+.luarc.json
+./plugin/
