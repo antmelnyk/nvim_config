@@ -4,6 +4,9 @@ vim.g.loaded_netrwPlugin = 1
 
 -- OR setup with some options
 require("nvim-tree").setup({
+  diagnostics = {
+    enable = true
+  },
   view = {
     width = 40,
   },
