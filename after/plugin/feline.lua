@@ -146,19 +146,22 @@ component.lsp = {
     if #clients ~= 0 then
       if progress then
         local spinners = {
-          "◜ ",
-          "◠ ",
-          "◝ ",
-          "◞ ",
-          "◡ ",
-          "◟ ",
+          "🌑 ",
+          "🌒 ",
+          "🌓 ",
+          "🌔 ",
+          "🌕 ",
+          "🌖 ",
+          "🌗 ",
+          "🌘 "
         }
+
         local ms = vim.loop.hrtime() / 1000000
         local frame = math.floor(ms / 120) % #spinners
         local content = string.format("%%<%s", spinners[frame + 1])
         return content or ""
       else
-        return "לּ LSP"
+        return "🌚 LSP"
       end
     end
     return ""
