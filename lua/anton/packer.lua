@@ -13,7 +13,7 @@ return require('packer').startup(function(use)
     requires = { {'nvim-lua/plenary.nvim'} }
   }
 
-  use ('savq/melange-nvim')
+  use('savq/melange-nvim')
 
   use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate'})
 
@@ -33,7 +33,18 @@ return require('packer').startup(function(use)
     end,
   })
 
-  use({ 'mhartington/formatter.nvim' })
+  use('mhartington/formatter.nvim')
+
+  use('freddiehaddad/feline.nvim')
+
+  use('nvim-tree/nvim-web-devicons')
+
+  use {
+    'lewis6991/gitsigns.nvim',
+    config = function()
+      require('gitsigns').setup()
+    end
+  }
 
   use {
     'VonHeikemen/lsp-zero.nvim',
