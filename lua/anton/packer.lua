@@ -45,6 +45,8 @@ return require('packer').startup(function(use)
 
   use('freddiehaddad/feline.nvim')
 
+  use('j-hui/fidget.nvim')
+
   use('nvim-tree/nvim-web-devicons')
 
   use {
