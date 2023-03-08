@@ -13,5 +13,6 @@ require("nvim-tree").setup({
   filters = {
     dotfiles = false,
   },
+  respect_buf_cwd = true
 })
 

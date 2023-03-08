@@ -168,6 +168,16 @@ component.scroll_bar = {
   right_sep = "block",
 }
 
+component.file_info = {
+  provider = {
+    name = 'file_info',
+    opts = {
+      type = 'relative',
+      file_modified_icon = '✍️'
+    }
+  }
+}
+
 local left = {
   component.vim_mode,
   component.git_branch,
@@ -175,7 +185,9 @@ local left = {
   -- component.git_delete,
   -- component.git_change,
 }
-local middle = {}
+local middle = {
+  component.file_info
+}
 local right = {
   component.file_type,
   component.separator,
